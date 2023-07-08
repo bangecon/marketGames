@@ -90,8 +90,8 @@ server <- function(input, output) {
     c <- input$c
     f <- input$f
     g = stackelbergGame(
-      leaderSheet = input$leaderSheet,
-      resultsSheet = input$resultsSheet,
+      leaderSheet = input$roster,
+      resultsSheet = input$sheet,
       a = a,
       b = b,
       c = c,
