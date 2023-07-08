@@ -103,76 +103,47 @@ server <- function(input, output) {
   })
 
   output$treePlot <- renderPlot({
-    if(is.null(data()$g)) {gameTree(
-      players = c("Leader", "Follower"),
-      payoffs1 = c(2, 1.5, 2, 2),
-      payoffs2 = c(2, 2.25, 1, 1))}
-    else{
       g <- data()
-      g$tree}}, width = 600)
+      g$tree}, width = 600)
 
   output$roles <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$roles}}, align = 'c')
+      g$roles}, align = 'c')
 
   output$leaderResults <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$leaderResults}}, align = 'c')
+      g$leaderResults}, align = 'c')
 
   output$followResults <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$followResults}}, align = 'c')
+      g$followResults}, align = 'c')
 
   output$results <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$results}}, align = 'c')
+      g$results}, align = 'c')
 
   output$payoffMatrix <- renderTable({
-    if(is.null(data()$g)) {
-      data.frame(
-        Follower.Defect = c("(2, 1)", "(1.5, 2.25)"),
-        Follower.Collude = c("(2, 1)", "(2, 2)"),
-        row.names = c("Leader.Defect", "Leader.Collude")
-      )
-    }
-    else{
       g <- data()
-      g$payoff}}, rownames = TRUE, align = 'lcc',
+      g$payoff}, rownames = TRUE, align = 'lcc',
         caption = "Student Payoff Matrix", caption.placement = "top")
 
   output$outputMatrix <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$output}}, rownames = TRUE, align = 'lcc',
+      g$output}, rownames = TRUE, align = 'lcc',
         caption = "Quantity Outcome Matrix", caption.placement = "top")
 
   output$priceMatrix <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$price}}, rownames = TRUE, align = 'lcc',
+      g$price}, rownames = TRUE, align = 'lcc',
         caption = "Price Outcome Matrix", caption.placement = "top")
 
   output$outcomePlot <- renderPlot({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      plot(g, round = input$round)}}, width = 600)
+      plot(g, round = input$round)}, width = 600)
 
   output$grades <- renderTable({
-    if(is.null(data()$g)) {}
-    else{
       g <- data()
-      g$grades}}, align = 'c')
+      g$grades}, align = 'c')
 }
 
 # Run the application
