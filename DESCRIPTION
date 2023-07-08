@@ -1,0 +1,38 @@
+Package: marketGames
+Title: Tools for in-class game experiments for Principles of Economics
+Version: 0.0.1
+Authors@R: 
+    person(given = "Jim",
+           family = "Bang",
+           role = c("aut", "cre"),
+           email = "bangjamest@sau.edu",
+           comment = c(ORCID = "0000-0002-7701-8220"))
+Author: James Bang [aut, cre], 
+Maintainer: James Bang <bangjamest@sau.edu> 
+Description: This package pulls activity data from Google Forms submissions to a 
+    Google Sheets file; tabulates, scores, and graphs the responses; and 
+    writes the grade data to a separate Google Sheet. Supported games include: 
+      1.  Market equilibrium game; 
+      2.  Entry and exit game; 
+      3.  Bertrand duopoly game; 
+      4.  Cournot duopoly game; 
+      5.  Stackelberg duopoly game;
+      6.  Multi-player prisoner's dilemma game; 
+      7.  Stag hunt game.
+    All documentation files include links to Google Forms addresses that can be 
+    copied and saved. 
+License: use_gpl3_license()
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: R(>= 4.0.0), 
+  ggplot2, 
+  dplyr
+Imports: googlesheets4,
+  googledrive,
+  ggpubr, 
+  tidyr, 
+  gtsummary, 
+  stringr
+Suggests: 

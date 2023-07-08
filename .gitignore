@@ -1,0 +1,6 @@
+.Rproj.user
+.secrets
+*.ini
+docs/.Rhistory
+*.gsheet
+*.gform
