@@ -117,7 +117,7 @@ server <- function(input, output) {
       g <- data()
       g$roles}}, align = 'c')
 
-  output$leaderResults <- renderTable(
+  output$leaderResults <- renderTable({
     if(is.null(data()$g)) {}
     else{
       g <- data()
