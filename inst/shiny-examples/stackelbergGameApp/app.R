@@ -173,6 +173,7 @@ server <- function(input, output) {
     else{
       g <- data()
       g$grades}}, align = 'c')
+}
 
 # Run the application
 shinyApp(ui = ui, server = server)
