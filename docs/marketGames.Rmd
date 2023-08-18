@@ -3,7 +3,6 @@ title: "An Open-Source Application to Computerize Simple Market Efficiency Games
 author: "James Bang^[St. Ambrose University, bangjamest@sau.edu]"
 date: "`r format(Sys.Date(), '%d %b %Y')`"
 output:
-  word_document: default
   pdf_document: default
 abstract: "In-class experiments provide instructors a powerful tool for helping students
   learn and understand market principles in economics. Despite the effectiveness of
